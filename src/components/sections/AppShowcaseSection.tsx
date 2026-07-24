@@ -141,7 +141,7 @@ export function AppShowcaseSection() {
                 alt="Mind A Lot app"
                 fill
                 sizes="(min-width: 1024px) 30vw, 45vw"
-                className="object-cover object-top"
+                className="object-contain object-top"
               />
             </div>
           </div>
