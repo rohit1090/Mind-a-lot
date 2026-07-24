@@ -53,7 +53,7 @@ export function SmallReadsSection() {
 
         <div className="relative mt-10">
           <div
-            className="flex gap-5 overflow-x-auto scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="flex gap-5 overflow-x-auto justify-center scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
             {ARTICLES.map((article) => (
               <div
