@@ -176,8 +176,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto mt-10 flex max-w-[1400px] flex-col items-center justify-between gap-3 border-t border-brand/10 pt-5 text-xs text-text-muted sm:flex-row">
-        <p>© 2025 Mind A Lot. All rights reserved.</p>
+      <div className="relative z-10 mx-auto mt-10 flex max-w-[1400px] flex-col items-center justify-center gap-3 border-t border-brand/10 pt-5 text-xs text-text-muted sm:flex-row">
         <div className="flex items-center gap-3">
           <Link href="/terms" className="hover:text-brand">
             Terms &amp; Condition&apos;s
@@ -187,6 +186,20 @@ export function Footer() {
             Privacy Policy
           </Link>
         </div>
+      </div>
+
+      <div className="relative z-10 mx-auto mt-4 max-w-[1400px] text-center">
+        <p className="text-[11px] font-bold uppercase tracking-[2px] text-text-muted">
+          Mind A Lot &mdash; An Initiative of Jagrati EdTech Pvt Ltd &middot;
+          &copy; 2026 &middot;{" "}
+          <Link href="/contact" className="hover:text-brand">
+            Contact
+          </Link>{" "}
+          &middot;{" "}
+          <Link href="/contact" className="hover:text-brand">
+            Partner With Us
+          </Link>
+        </p>
       </div>
     </footer>
   );

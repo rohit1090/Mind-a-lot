@@ -74,16 +74,16 @@ export function WhoIsThisForSection() {
       />
 
       <div className="relative z-10 mx-auto max-w-[1400px]">
-        <h2 className="text-center font-serif text-4xl text-text-dark sm:text-5xl">
+        <h2 className="text-center font-serif text-2xl font-bold capitalize text-text-heading">
           Who is this for?
         </h2>
         <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-brand/40" />
 
-        <p className="mx-auto mt-5 max-w-2xl text-center text-text-muted">
+        <p className="mx-auto mt-5 max-w-2xl text-center font-subheading text-text-muted">
           Mind A Lot is for everyone who wants to feel better, grow stronger,
           and cope smarter.
         </p>
-        <p className="mx-auto mt-2 max-w-2xl text-center italic text-[#c17a3e]">
+        <p className="mx-auto mt-2 max-w-2xl text-center italic text-brand">
           &ldquo;Wherever you are. Whoever you are. However you feel.&rdquo; —
           Mind A Lot is here for you!
         </p>
@@ -108,7 +108,7 @@ export function WhoIsThisForSection() {
               >
                 <path
                   d="M0,25 C60,20 100,15 150,45 C210,80 250,110 310,75 C355,50 380,35 400,50 L400,300 L0,300 Z"
-                  fill="#fdfbfa"
+                  fill="#fdfbf6"
                   fillOpacity="0.97"
                 />
               </svg>
@@ -129,7 +129,7 @@ export function WhoIsThisForSection() {
           </div>
 
           {/* Working Professionals - side card */}
-          <div className={`relative flex overflow-hidden rounded-3xl bg-[#fdfbfa] shadow-sm ${professionals.span}`}>
+          <div className={`relative flex overflow-hidden rounded-3xl bg-cream shadow-sm ${professionals.span}`}>
             <div className="relative w-1/2 shrink-0">
               <Image
                 src={professionals.image}
@@ -137,7 +137,7 @@ export function WhoIsThisForSection() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-[#fdfbfa]" />
+              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-cream" />
             </div>
             <div className="flex flex-col justify-center px-7 py-5">
               <h3 className="font-serif text-2xl font-bold leading-tight text-text-dark">
@@ -155,7 +155,7 @@ export function WhoIsThisForSection() {
           </div>
 
           {/* LGBTQ+ Community - stacked card (photo top, text bottom) */}
-          <div className={`flex flex-col overflow-hidden rounded-3xl bg-[#fdfbfa] shadow-sm ${lgbtq.span}`}>
+          <div className={`flex flex-col overflow-hidden rounded-3xl bg-cream shadow-sm ${lgbtq.span}`}>
             <div className="relative min-h-0 flex-1">
               <Image
                 src={lgbtq.image}
@@ -178,7 +178,7 @@ export function WhoIsThisForSection() {
           </div>
 
           {/* Older Adults - side card */}
-          <div className={`flex overflow-hidden rounded-3xl bg-[#fdfbfa] shadow-sm ${older.span}`}>
+          <div className={`flex overflow-hidden rounded-3xl bg-cream shadow-sm ${older.span}`}>
             <div className="relative w-1/2 shrink-0">
               <Image
                 src={older.image}
@@ -186,7 +186,7 @@ export function WhoIsThisForSection() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-[#fdfbfa]" />
+              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-cream" />
             </div>
             <div className="flex flex-col justify-center px-7 py-5">
               <h3 className="font-serif text-2xl font-bold leading-tight text-text-dark">
@@ -205,7 +205,7 @@ export function WhoIsThisForSection() {
         {/* Bottom row */}
         <div className="mt-5 grid gap-5 lg:grid-cols-[1.15fr_1fr]">
           {/* Neurodivergent Users - side card */}
-          <div className="flex h-[240px] overflow-hidden rounded-3xl bg-[#fdfbfa] shadow-sm">
+          <div className="flex h-[240px] overflow-hidden rounded-3xl bg-cream shadow-sm">
             <div className="relative w-1/2 shrink-0">
               <Image
                 src={neurodivergent.image}
@@ -213,7 +213,7 @@ export function WhoIsThisForSection() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-[#fdfbfa]" />
+              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-cream" />
             </div>
             <div className="flex flex-col justify-center px-7 py-5">
               <h3 className="font-serif text-2xl font-bold leading-tight text-text-dark">
@@ -229,7 +229,7 @@ export function WhoIsThisForSection() {
           </div>
 
           {/* Anyone Who Needs Emotional Support - reversed side card */}
-          <div className="flex overflow-hidden rounded-3xl bg-[#fdfbfa] shadow-sm">
+          <div className="flex overflow-hidden rounded-3xl bg-cream shadow-sm">
             <div className="flex flex-col justify-center px-7 py-5">
               <h3 className="font-serif text-2xl font-bold leading-tight text-text-dark">
                 {support.title}
@@ -248,7 +248,7 @@ export function WhoIsThisForSection() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-l from-transparent to-[#fdfbfa]" />
+              <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-l from-transparent to-cream" />
             </div>
           </div>
         </div>

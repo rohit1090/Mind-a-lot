@@ -1,129 +1,86 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
-const TRUST_BADGES = [
-  {
-    key: "secure",
-    title: "Secure & Confidential",
-    description: "Enterprise-Grade Security",
-    fillIcon: false,
-    icon: (
-      <>
-        <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" />
-        <path d="M9 12l2 2 4-4" />
-      </>
-    ),
-  },
-  {
-    key: "clinical",
-    title: "Clinically Validated",
-    description: "Evidence-based Practices",
-    fillIcon: true,
-    icon: (
-      <>
-        <circle cx="8" cy="8" r="3" />
-        <path d="M2.5 19v-1.5C2.5 14.8 5 13 8 13s5.5 1.8 5.5 4.5V19z" />
-        <circle cx="16.5" cy="7.5" r="2.5" />
-        <path d="M14.6 12.2c.6-.13 1.24-.2 1.9-.2 2.8 0 5 1.6 5 3.8V17h-5.5" />
-      </>
-    ),
-  },
-  {
-    key: "global",
-    title: "Global Reach",
-    description: "Care Without Boundaries",
-    fillIcon: false,
-    icon: (
-      <>
-        <circle cx="12" cy="12" r="10" />
-        <path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z" />
-      </>
-    ),
-  },
-];
-
 const NODES_DATA = [
   {
     key: "schools",
-    title: "Schools",
-    desc: "Early emotional\ndevelopment &\ncounseling",
+    title: "Preschool",
+    desc: "Early Emotional Foundations",
     left: "20.0%",    // (160 / 800) * 100
     top: "19.71%",   // (138 / 700) * 100
-    image: "Schools.png",
-    imageWidth: 70,
-    imageHeight: 69,
+    image: "PreSchool.svg",
+    imageWidth: 60,
+    imageHeight: 59,
   },
   {
     key: "universities",
-    title: "Universities",
-    desc: "Student well-being,\nstress & career\nguidance",
+    title: "School",
+    desc: "Student Wellbeing Support",
     left: "80.0%",    // (640 / 800) * 100
     top: "19.71%",   // (138 / 700) * 100
-    image: "Universities.png",
-    imageWidth: 70,
-    imageHeight: 69,
+    image: "school.svg",
+    imageWidth: 59,
+    imageHeight: 59,
   },
   {
     key: "families",
-    title: "Families",
-    desc: "Relationships,\nparenting & holistic\nfamily support",
+    title: "Workforce",
+    desc: "Mental Health Excellence",
     left: "11.875%", // (95 / 800) * 100
     top: "64.0%",    // (448 / 700) * 100
-    image: "Families.png",
-    imageWidth: 69,
-    imageHeight: 67,
+    image: "Workforce.svg",
+    imageWidth: 59,
+    imageHeight: 59,
   },
   {
     key: "corporates",
-    title: "Corporates",
-    desc: "EAP programs,\nburnout prevention &\nleadership wellness",
+    title: "College",
+    desc: "Career & Life Skills",
     left: "88.125%", // (705 / 800) * 100
     top: "64.0%",    // (448 / 700) * 100
-    image: "Corporates.png",
-    imageWidth: 69,
-    imageHeight: 68,
+    image: "Collage.svg",
+    imageWidth: 59,
+    imageHeight: 59,
   },
   {
     key: "retirement",
-    title: "Retirement",
-    desc: "Loneliness mitigation &\npurpose-driven wellness",
+    title: "Coaching",
+    desc: "Performance & Resilience",
     left: "50.0%",    // (400 / 800) * 100
     top: "85.71%",
-    image: "Retirement.png",
-    imageWidth: 66,
-    imageHeight: 68,
+    image: "Coaching.svg",
+    imageWidth: 59,
+    imageHeight: 59,
   },
 ];
 
 export function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden bg-cream py-10 lg:py-8">
-      <div className="relative z-10 mx-auto max-w-[1440px] px-5 lg:px-0">
+      <div className="relative z-10 mx-auto max-w-[1280px] px-5 lg:px-0">
 
         {/* Main Grid Container */}
         <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-4">
 
           {/* Left Column Container */}
-          <div className="w-full lg:w-auto">
-            <h1 className="mt-0 font-serif text-2xl leading-[1.15] text-text-dark sm:text-3xl md:text-[34px] lg:text-[48px]">
-              <span className="font-bold">Complete Mental</span>
+          <div className="w-full lg:w-auto lg:max-w-[50%]">
+            <h1 className="mt-0 font-serif text-2xl capitalize leading-[1.15] font-bold text-text-heading sm:text-3xl md:text-[34px] lg:text-[44px]">
+              One mind. Every life stage.
               <br />
-              <span className="font-bold">Wellness</span>{" "}
-              <span className="text-brand">Infrastructure</span>
-              <br />
-              for Your Organization.
+              One ecosystem to <span className="text-text-accent">care for both.</span>
             </h1>
 
-            <p className="mt-4 max-w-[420px] text-sm leading-relaxed text-text-muted sm:text-[15px]">
-              Powered by 80+ global counselors across India, USA, Canada,
-              Dubai, and Australia. 24/7 boundary-less support across time
-              zones.
+            <p className="mt-4 max-w-[90%] font-subheading text-sm leading-relaxed text-text-muted sm:text-[15px]">
+              From the preschool years to the boardroom, Mind A Lot builds
+              structured, data-backed mental wellness programs for schools,
+              colleges, corporates, coaching institutes, and individuals —
+              under one methodology, not a marketplace of strangers.
             </p>
 
             {/* Action Buttons */}
             <div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
               <Button href="/contact" variant="primary" className="justify-center sm:w-auto">
-                Book an Enterprise Demo
+                For Institutions
                 <svg
                   viewBox="0 0 16 16"
                   fill="none"
@@ -139,35 +96,20 @@ export function HeroSection() {
               </Button>
 
               <Button href="/about" variant="secondary" className="justify-center sm:w-auto">
-                Explore Our Care Ecosystem
-              </Button>
-            </div>
-
-            {/* Trust Badges */}
-            <div className="mt-10 flex flex-col divide-y divide-brand/15 border-t border-brand/10 pt-4 gap-3 lg:flex-row lg:flex-nowrap lg:divide-x lg:divide-y-0">
-              {TRUST_BADGES.map((badge) => (
-                <div
-                  key={badge.key}
-                  className="flex items-start gap-3 pb-3 last:pb-0 lg:pr-3 lg:pb-0"
+                For Individuals
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  strokeWidth={1.5}
+                  className="h-4 w-4 stroke-brand"
                 >
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill={badge.fillIcon ? "currentColor" : "none"}
-                    strokeWidth={badge.fillIcon ? 0 : 1.5}
-                    className="h-7 w-7 shrink-0 stroke-brand text-brand"
-                  >
-                    {badge.icon}
-                  </svg>
-                  <div className="min-w-0">
-                    <p className="text-base font-semibold text-text-dark">
-                      {badge.title}
-                    </p>
-                    <p className="text-sm text-text-muted">
-                      {badge.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Button>
             </div>
           </div>
 
@@ -187,10 +129,10 @@ export function HeroSection() {
                 />
               </div>
               <div className="text-center">
-                <div className="text-[11px] font-bold tracking-[3px] uppercase text-[#a49183]">
+                <div className="text-[11px] font-bold tracking-[3px] uppercase text-brand/70">
                   Lifelong Care
                 </div>
-                <div className="text-[14px] font-bold tracking-[3.5px] uppercase text-[#7b5b47]">
+                <div className="text-[14px] font-bold tracking-[3.5px] uppercase text-text-heading">
                   One Ecosystem
                 </div>
               </div>
@@ -210,10 +152,10 @@ export function HeroSection() {
                     className="h-12 w-12 shrink-0"
                   />
                   <div className="min-w-0 text-left">
-                    <div className="text-sm font-bold text-[#7b5b47]">
+                    <div className="text-sm font-bold text-text-heading">
                       {node.title}
                     </div>
-                    <div className="text-xs leading-snug text-[#8d7a6e]">
+                    <div className="text-xs leading-snug text-text-muted">
                       {node.desc.replace(/\n/g, " ")}
                     </div>
                   </div>
@@ -223,16 +165,16 @@ export function HeroSection() {
           </div>
 
           {/* Right Column Container - Maximized Ecosystem Diagram (tablet & desktop, unchanged) */}
-          <div className="relative hidden w-full max-w-[680px] justify-self-center sm:block lg:col-span-7 lg:justify-self-end">
+          <div className="relative hidden w-full max-w-[620px] justify-self-center sm:block lg:col-span-7 lg:justify-self-end">
             <div className="relative mx-auto aspect-[800/700] w-full overflow-visible">
               
               {/* Header inside top arc */}
               <div className="absolute top-[15%] left-1/2 z-10 -translate-x-1/2 text-center">
-                <div className="text-[11px] font-bold tracking-[3px] uppercase text-[#a49183]">
-                  Lifelong Care
+                <div className="text-[11px] font-bold tracking-[3px] uppercase text-brand/70">
+                 Mind A Lot
                 </div>
-                <div className="text-[14px] font-bold tracking-[3.5px] uppercase text-[#7b5b47]">
-                  One Ecosystem
+                <div className="text-[14px] font-bold tracking-[3.5px] uppercase text-text-heading">
+                  Across Life Stages
                 </div>
               </div>
 
@@ -337,12 +279,12 @@ export function HeroSection() {
                   />
 
                   {/* Title Badge */}
-                  <div className="-mt-1 mb-1 rounded-full border border-[#f0dfd5] bg-[#fefbf9] px-3 py-0.5 text-[0.82rem] font-bold text-[#7b5b47] shadow-xs whitespace-nowrap">
+                  <div className="-mt-1 mb-1 rounded-full border border-brand/15 bg-cream px-3 py-0.5 text-[0.82rem] font-bold text-text-heading shadow-xs whitespace-nowrap">
                     {node.title}
                   </div>
 
                   {/* Description */}
-                  <div className="whitespace-pre-line text-[13px] leading-tight text-[#8d7a6e]">
+                  <div className="whitespace-pre-line text-[13px] leading-tight text-text-muted">
                     {node.desc}
                   </div>
                 </div>

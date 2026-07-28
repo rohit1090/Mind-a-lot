@@ -49,12 +49,12 @@ export function AppShowcaseSection() {
         <div className="flex flex-col items-center gap-14 lg:flex-row lg:items-center lg:gap-10">
           {/* Left column */}
           <div className="order-last w-full lg:order-none lg:w-1/2">
-            <h2 className="font-serif text-4xl font-bold leading-tight text-text-dark sm:text-5xl">
+            <h2 className="font-serif text-2xl font-bold capitalize leading-tight text-text-heading">
               Your pocket
               <br />
               for peace of mind.
             </h2>
-            <p className="mt-3 font-serif text-2xl italic text-brand sm:text-3xl">
+            <p className="mt-3 font-subheading text-2xl italic text-brand sm:text-3xl">
               Simplify the process
             </p>
             <p className="mt-4 max-w-md text-text-muted">

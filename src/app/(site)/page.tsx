@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 
 import { HeroSection } from "@/components/sections/HeroSection";
-import { GlobalPresenceSection } from "@/components/sections/GlobalPresenceSection";
+import { WhyOneEcosystemSection } from "@/components/sections/WhyOneEcosystemSection";
+import { WaysInSection } from "@/components/sections/WaysInSection";
+import { FounderSection } from "@/components/sections/FounderSection";
+import { ImpactStatsSection } from "@/components/sections/ImpactStatsSection";
 import { DifferentiatorsSection } from "@/components/sections/DifferentiatorsSection";
-import { StepsSection } from "@/components/sections/StepsSection";
 import { ExpertsSection } from "@/components/sections/ExpertsSection";
-import { TaglineSection } from "@/components/sections/TaglineSection";
-import { WhoIsThisForSection } from "@/components/sections/WhoIsThisForSection";
+// import { WhoIsThisForSection } from "@/components/sections/WhoIsThisForSection"; // hidden for now
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { AppShowcaseSection } from "@/components/sections/AppShowcaseSection";
+// import { AppShowcaseSection } from "@/components/sections/AppShowcaseSection"; // hidden for now
 import { SmallReadsSection } from "@/components/sections/SmallReadsSection";
+import { GetStartedCtaSection } from "@/components/sections/GetStartedCtaSection";
 
 const TITLE = "Mind A Lot | Complete Mental Wellness Infrastructure";
 const DESCRIPTION =
@@ -34,15 +36,17 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <GlobalPresenceSection />
+      <WhyOneEcosystemSection />
+      <WaysInSection />
       <DifferentiatorsSection />
-      <StepsSection />
+      <FounderSection />
+      <ImpactStatsSection />
       <ExpertsSection />
-      <TaglineSection />
-      <WhoIsThisForSection />
+      {/* <WhoIsThisForSection /> hidden for now */}
       <TestimonialsSection />
-      <AppShowcaseSection />
+      {/* <AppShowcaseSection /> hidden for now */}
       <SmallReadsSection />
+      <GetStartedCtaSection />
     </>
   );
 }

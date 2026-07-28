@@ -56,22 +56,12 @@ const FEATURES = [
 export function DifferentiatorsSection() {
   return (
     <section className="relative w-full overflow-hidden bg-white pt-16 pb-16 lg:pb-20">
-      <Image
-        src="/images/stone-bottom.png"
-        alt=""
-        width={147}
-        height={135}
-        className="pointer-events-none absolute -bottom-2 -right-2 hidden h-auto w-[200px] opacity-90 lg:block"
-      />
+      <div className="relative z-10 mx-auto max-w-[1280px]">
+        <p className="text-center font-subheading text-xs font-bold uppercase tracking-[3px] text-text-accent">
+          — Our Difference
+        </p>
 
-      <div className="relative z-10 mx-auto max-w-[1400px] px-5">
-        <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-brand/15 bg-white px-4 py-1.5 text-xs font-bold tracking-[3px] text-brand">
-          <span className="h-1 w-1 rounded-full bg-sage" />
-          OUR DIFFERENCE
-          <span className="h-1 w-1 rounded-full bg-sage" />
-        </div>
-
-        <h2 className="mt-5 text-center font-serif text-4xl text-text-dark sm:text-5xl">
+        <h2 className="mt-5 text-center font-serif text-2xl font-bold capitalize text-text-heading">
           What makes <span className="text-brand">Mind-A-Lot</span> different?
         </h2>
 
@@ -82,11 +72,6 @@ export function DifferentiatorsSection() {
           </svg>
           <span className="h-px w-20 bg-brand/20 sm:w-28" />
         </div>
-
-        <p className="mx-auto mt-6 max-w-xl text-center text-text-muted">
-          Thoughtfully designed features that put your comfort, privacy, and
-          well-being first.
-        </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {FEATURES.map((feature) => (
@@ -132,17 +117,10 @@ export function DifferentiatorsSection() {
           ))}
         </div>
 
-        <div className="mt-14 flex items-center justify-center gap-6">
-          <Image
-            src="/images/Leaf.svg"
-            alt=""
-            width={45}
-            height={21}
-            className="h-auto w-11 -scale-x-100"
-          />
+        <div className="mt-14 flex items-center justify-center">
           <Link
             href="/about"
-            className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-brand to-brand-dark px-8 py-3.5 text-sm font-semibold text-white shadow-lg"
+            className="inline-flex items-center gap-3 rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-colors hover:bg-brand-dark"
           >
             Explore all features
             <svg
@@ -158,13 +136,6 @@ export function DifferentiatorsSection() {
               />
             </svg>
           </Link>
-          <Image
-            src="/images/Leaf.svg"
-            alt=""
-            width={45}
-            height={21}
-            className="h-auto w-11"
-          />
         </div>
       </div>
     </section>

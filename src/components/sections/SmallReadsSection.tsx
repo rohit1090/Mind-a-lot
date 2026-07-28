@@ -41,14 +41,12 @@ function VaseDecoration() {
 
 export function SmallReadsSection() {
   return (
-    <section className="w-full bg-white py-12 lg:py-20">
+    <section className="w-full bg-white pb-12 pt-6 lg:pb-20 lg:pt-14">
       <div className="mx-auto max-w-[1500px] px-5 lg:px-6">
         <div className="flex items-start justify-center gap-3">
-          <Image src="/images/Leaf.svg" alt="" width={45} height={21} className="h-auto w-8 -scale-x-100" />
-          <h2 className="text-center font-serif text-2xl font-bold text-text-dark sm:text-3xl">
+          <h2 className="text-center font-serif text-2xl font-bold capitalize text-text-heading">
             Not ready to talk yet? Start with a small read.
           </h2>
-          <Image src="/images/Leaf.svg" alt="" width={45} height={21} className="h-auto w-8" />
         </div>
 
         <div className="relative mt-10">
@@ -82,7 +80,7 @@ export function SmallReadsSection() {
             <span className="my-auto hidden h-3 w-3 shrink-0 rotate-45 border border-brand/20 sm:block" />
 
             {/* Need help - CTA card */}
-            <div className="relative w-[300px] shrink-0 overflow-hidden rounded-2xl border border-brand/10 bg-[#fdf5f1] p-6">
+            <div className="relative w-[300px] shrink-0 overflow-hidden rounded-2xl border border-brand/10 bg-cream p-6">
               <h3 className="text-lg font-bold text-text-dark">Need help?</h3>
               <p className="mt-1 text-sm text-text-muted">
                 Explore our FAQs
